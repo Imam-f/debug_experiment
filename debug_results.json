@@ -1,0 +1,31 @@
+{
+  "x": {
+    "name": "x",
+    "type": "int",
+    "raw_value": "32767",
+    "int_value": 32767,
+    "hex_value": "0x7fff",
+    "binary_value": "0b111111111111111"
+  },
+  "message": {
+    "name": "message",
+    "type": "char *",
+    "raw_value": "0x64 <error: Cannot access memory at address 0x64>",
+    "string_value": null
+  },
+  "p": {
+    "name": "p",
+    "type": "struct Person",
+    "raw_value": "{age = 4096, name = 0x555555555060 <_start> \"\\363\\017\\036\\372\\061\\355I\\211\\321^H\\211\\342H\\203\\344\\360PTE1\\300\\061\\311H\\215\", <incomplete sequence \\312>}",
+    "fields": {
+      "age": {
+        "value": "4096",
+        "type": "int"
+      },
+      "name": {
+        "value": "0x555555555060 <_start> \"\\363\\017\\036\\372\\061\\355I\\211\\321^H\\211\\342H\\203\\344\\360PTE1\\300\\061\\311H\\215\", <incomplete sequence \\312>",
+        "type": "char *"
+      }
+    }
+  }
+}
