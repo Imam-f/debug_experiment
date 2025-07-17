@@ -18,9 +18,22 @@ int calculate_sum(int a, int b) {
     return a + b;
 }
 
+typedef struct hello { int x; } HELLO;
+typedef struct there { int x; } THERE;
+THERE extract(HELLO x) {
+    return (struct there){.x = x.x};
+}
+
 int main() {
     int x = 50;
     
+    // typedef int HELLO;
+    HELLO y = {.x = 3};
+
+    THERE t = {.x = 4};
+
+    HELLO f = extract(x);
+
     // Trigger various breakpoint scenarios
     global_counter++;
     
